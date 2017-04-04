@@ -9,7 +9,7 @@
 import UIKit
 
 
-class TrendingCollectionViewController: FeedCollectionViewController {
+class TrendingViewController: FeedCollectionViewController {
     
     //MARK: - Properties
     override var downloadURL: URL {

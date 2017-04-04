@@ -8,7 +8,7 @@
 
 import UIKit
 
-class HomeCollectionViewControllerViewController: FeedCollectionViewController {
+class HomeViewController: FeedCollectionViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

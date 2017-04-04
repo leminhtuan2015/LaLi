@@ -12,7 +12,7 @@ protocol SettingsDelegate {
     func hideSettingsView(status : Bool)
 }
 
-class Settings: UIView,  UITableViewDelegate, UITableViewDataSource {
+class Settings: UIView, UITableViewDelegate, UITableViewDataSource {
 
     //MARK: Properties
     let items = ["Settings", "Terms & privacy policy", "Send Feedback", "Help", "Switch Account", "Cancel"]

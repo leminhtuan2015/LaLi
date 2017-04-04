@@ -28,7 +28,7 @@ class FeedCollectionViewController: UICollectionViewController, UICollectionView
         self.collectionView?.scrollIndicatorInsets = UIEdgeInsetsMake(21, 0, 0, 0)
         
         //Refresh Control
-        refresh.addTarget(self, action: #selector(TrendingCollectionViewController.refreshContent), for: UIControlEvents.valueChanged)
+        refresh.addTarget(self, action: #selector(TrendingViewController.refreshContent), for: UIControlEvents.valueChanged)
         self.refresh.tintColor = UIColor.rbg(r: 228, g: 34, b: 24)
         self.collectionView?.addSubview(self.refresh)
         

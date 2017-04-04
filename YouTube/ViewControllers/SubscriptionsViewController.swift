@@ -9,7 +9,7 @@
 import UIKit
 
 
-class SubscriptionsCollectionViewController: FeedCollectionViewController {
+class SubscriptionsViewController: FeedCollectionViewController {
     
     
     //MARK: -  ViewController Lifecylce

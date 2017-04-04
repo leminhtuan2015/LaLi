@@ -8,11 +8,11 @@
 
 import UIKit
 
-class NavVC: UINavigationController, PlayerVCDelegate  {
+class NavigationViewController: UINavigationController, PlayerVCDelegate  {
 
     //MARK: Properties
-    lazy var playVC: PlayVC = {
-        let pvc: PlayVC = self.storyboard?.instantiateViewController(withIdentifier: "PlayVC") as! PlayVC
+    lazy var playVC: PlayViewController = {
+        let pvc: PlayViewController = self.storyboard?.instantiateViewController(withIdentifier: "PlayVC") as! PlayViewController
         pvc.view.frame = CGRect.init(origin: self.hiddenOrigin, size: UIScreen.main.bounds.size)
         pvc.delegate = self
         return pvc

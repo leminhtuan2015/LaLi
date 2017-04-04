@@ -9,7 +9,7 @@
 import UIKit
 
 
-class AccountCollectionViewController: UICollectionViewController, UICollectionViewDelegateFlowLayout {
+class AccountViewController: UICollectionViewController, UICollectionViewDelegateFlowLayout {
     
     //MARK: - Properties
     let menuTitles = ["History", "My Videos", "Notifications", "Watch Later"]

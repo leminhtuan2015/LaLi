@@ -14,7 +14,7 @@ protocol PlayerVCDelegate {
 
 import UIKit
 import AVFoundation
-class PlayVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UIGestureRecognizerDelegate {
+class PlayViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UIGestureRecognizerDelegate {
     
     //MARK: Properties
     @IBOutlet weak var player: UIView!
@@ -32,8 +32,8 @@ class PlayVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UIGe
         self.view.backgroundColor = UIColor.clear
         self.player.layer.anchorPoint.applying(CGAffineTransform.init(translationX: -0.5, y: -0.5))
         self.tableView.tableFooterView = UIView.init(frame: CGRect.init(x: 0, y: 0, width: 0, height: 0))
-        self.player.addGestureRecognizer(UITapGestureRecognizer.init(target: self, action: #selector(PlayVC.tapPlayView)))
-        NotificationCenter.default.addObserver(self, selector: #selector(PlayVC.tapPlayView), name: NSNotification.Name("open"), object: nil)
+        self.player.addGestureRecognizer(UITapGestureRecognizer.init(target: self, action: #selector(PlayViewController.tapPlayView)))
+        NotificationCenter.default.addObserver(self, selector: #selector(PlayViewController.tapPlayView), name: NSNotification.Name("open"), object: nil)
     }
 
     func animate()  {
