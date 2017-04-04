@@ -346,7 +346,7 @@
                     </connections>
                 </panGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="-119" y="1628"/>
+            <point key="canvasLocation" x="1286" y="154"/>
         </scene>
         <!--Navigation View Controller-->
         <scene sceneID="VBS-Ts-hUi">

@@ -32,6 +32,7 @@
 		22BD935E1D33818500CD57A5 /* SubscriptionsProfilePicCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22BD935D1D33818500CD57A5 /* SubscriptionsProfilePicCell.swift */; };
 		22BD93601D3394A200CD57A5 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22BD935F1D3394A200CD57A5 /* User.swift */; };
 		22BD93621D33953700CD57A5 /* Playlist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22BD93611D33953700CD57A5 /* Playlist.swift */; };
+		8442B8EF1E93F03700C49CF6 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8442B8EE1E93F03700C49CF6 /* Constant.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,6 +63,7 @@
 		22BD935D1D33818500CD57A5 /* SubscriptionsProfilePicCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SubscriptionsProfilePicCell.swift; path = "Supporting views/SubscriptionsProfilePicCell.swift"; sourceTree = "<group>"; };
 		22BD935F1D3394A200CD57A5 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = User.swift; path = Model/User.swift; sourceTree = "<group>"; };
 		22BD93611D33953700CD57A5 /* Playlist.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Playlist.swift; path = Model/Playlist.swift; sourceTree = "<group>"; };
+		8442B8EE1E93F03700C49CF6 /* Constant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Constant.swift; path = Helpers/Constant.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,9 +115,8 @@
 		2241B9341D22821600A8167B /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
-				22449DE61D315E3900F3F39D /* LauchVIew.xib */,
-				22AA44721D1302FC00CA6185 /* Info.plist */,
 				220E5E311D2E7D6C001E60A3 /* GlobalVariables.swift */,
+				8442B8EE1E93F03700C49CF6 /* Constant.swift */,
 			);
 			name = Helpers;
 			sourceTree = "<group>";
@@ -154,6 +155,8 @@
 			children = (
 				22AA44661D1302FC00CA6185 /* AppDelegate.swift */,
 				22AA446A1D1302FC00CA6185 /* Main.storyboard */,
+				22449DE61D315E3900F3F39D /* LauchVIew.xib */,
+				22AA44721D1302FC00CA6185 /* Info.plist */,
 				22AA446D1D1302FC00CA6185 /* Assets.xcassets */,
 				2229DC541D1EEA2E0058E804 /* ViewControllers */,
 				2266A71C1D2E6C1B00B4B9B3 /* supporting views */,
@@ -249,6 +252,7 @@
 				220E5E321D2E7D6C001E60A3 /* GlobalVariables.swift in Sources */,
 				22B7F9DE1D465E15008C427D /* PlayViewController.swift in Sources */,
 				22B7F9E01D478BF9008C427D /* Video.swift in Sources */,
+				8442B8EF1E93F03700C49CF6 /* Constant.swift in Sources */,
 				220E5E301D2E7D4E001E60A3 /* VideoItem.swift in Sources */,
 				220E5E201D2E7C92001E60A3 /* MainViewController.swift in Sources */,
 				220E5E221D2E7C92001E60A3 /* TrendingViewController.swift in Sources */,

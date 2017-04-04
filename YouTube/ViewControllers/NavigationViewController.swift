@@ -17,24 +17,28 @@ class NavigationViewController: UINavigationController, PlayerVCDelegate  {
         pvc.delegate = self
         return pvc
     }()
+    
     let statusView: UIView = {
         let st = UIView.init(frame: UIApplication.shared.statusBarFrame)
         st.backgroundColor = UIColor.black
-        st.alpha = 0.15
+        st.alpha = 0.0
         return st
     }()
-        let hiddenOrigin: CGPoint = {
+    
+    let hiddenOrigin: CGPoint = {
         let y = UIScreen.main.bounds.height - (UIScreen.main.bounds.width * 9 / 32) - 10
         let x = -UIScreen.main.bounds.width
         let coordinate = CGPoint.init(x: x, y: y)
         return coordinate
     }()
+    
     let minimizedOrigin: CGPoint = {
         let x = UIScreen.main.bounds.width/2 - 10
         let y = UIScreen.main.bounds.height - (UIScreen.main.bounds.width * 9 / 32) - 10
         let coordinate = CGPoint.init(x: x, y: y)
         return coordinate
     }()
+    
     let fullScreenOrigin = CGPoint.init(x: 0, y: 0)
 
     //Methods
@@ -95,6 +99,7 @@ class NavigationViewController: UINavigationController, PlayerVCDelegate  {
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewWillAppear(true)
+        
         if let window = UIApplication.shared.keyWindow {
             window.addSubview(self.statusView)
             window.addSubview(self.playVC.view)

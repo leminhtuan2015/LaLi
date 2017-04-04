@@ -12,15 +12,24 @@ import UIKit
 class MainViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout, SettingsDelegate, SearchDelegate, TabBarDelegate   {
     
     //MARK: Properties
+    
+    let items = [constant.HOME_STORYBOARD_ID,
+                 constant.TRENDING_STORYBOARD_ID,
+                 constant.SUBSCRIPTIONS_STORYBOARD_ID,
+                 constant.ACCOUNT_STORYBOARD_ID]
+    
     var views = [UIView]()
-    let items = ["Home", "Trending", "Subscriptions", "Account"]
     var viewsAreInitialized = false
+    
     lazy var collectionView: UICollectionView  = {
         let layout = UICollectionViewFlowLayout()
         layout.scrollDirection = .horizontal
         layout.minimumInteritemSpacing = 0
         layout.minimumLineSpacing = 0
-        let cv: UICollectionView = UICollectionView.init(frame: CGRect.init(x: 0, y: 0, width: UIScreen.main.bounds.width, height: (self.view.bounds.height)), collectionViewLayout: layout)
+        
+        let cv: UICollectionView = UICollectionView
+            .init(frame: CGRect.init(x: 0, y: 0, width: UIScreen.main.bounds.width,
+                                     height: (self.view.bounds.height)), collectionViewLayout: layout)
         cv.delegate = self
         cv.dataSource = self
         cv.showsHorizontalScrollIndicator = false
@@ -31,24 +40,6 @@ class MainViewController: UIViewController, UICollectionViewDataSource, UICollec
         return cv
     }()
     
-    lazy var tabBar: TabBar = {
-        let tb = TabBar.init(frame: CGRect.init(x: 0, y: 0, width: globalVariables.width, height: 64))
-        tb.delegate = self
-        return tb
-    }()
-    
-    lazy var settings: Settings = {
-        let st = Settings.init(frame: UIScreen.main.bounds)
-        st.delegate = self
-        return st
-    }()
-    
-    lazy var search: Search = {
-        let se = Search.init(frame: UIScreen.main.bounds)
-        se.delegate = self
-        return se
-    }()
-    
     let titleLabel: UILabel = {
         let tl = UILabel.init(frame: CGRect.init(x: 20, y: 5, width: 200, height: 30))
         tl.font = UIFont.systemFont(ofSize: 18)
@@ -57,10 +48,26 @@ class MainViewController: UIViewController, UICollectionViewDataSource, UICollec
         return tl
     }()
     
+    lazy var search: Search = {
+        let se = Search.init(frame: UIScreen.main.bounds)
+        se.delegate = self
+        return se
+    }()
+    
+    lazy var settings: Settings = {
+        let st = Settings.init(frame: UIScreen.main.bounds)
+        st.delegate = self
+        return st
+    }()
+    
+    lazy var tabBar: TabBar = {
+        let tb = TabBar.init(frame: CGRect.init(x: 0, y: 0, width: globalVariables.width, height: 64))
+        tb.delegate = self
+        return tb
+    }()
     
     //MARK: Methods
     func customization()  {
-        
         //CollectionView Customization
         self.collectionView.contentInset = UIEdgeInsetsMake(44, 0, 0, 0)
         self.view.addSubview(self.collectionView)
