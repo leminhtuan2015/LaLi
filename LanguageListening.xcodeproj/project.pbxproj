@@ -165,7 +165,7 @@
 				2241B9341D22821600A8167B /* Helpers */,
 			);
 			name = LanguageListening;
-			path = YouTube;
+			path = LanguageListening;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -184,7 +184,7 @@
 			dependencies = (
 			);
 			name = LanguageListening;
-			productName = YouTube;
+			productName = LanguageListening;
 			productReference = 22AA44631D1302FB00CA6185 /* LanguageListening.app */;
 			productType = "com.apple.product-type.application";
 		};
@@ -376,9 +376,9 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer: haik@mexonis.com (GZ4E237K2F)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = STL8QF2W3R;
-				INFOPLIST_FILE = YouTube/Info.plist;
+				INFOPLIST_FILE = LanguageListening/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.mexonis.YouTube;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mexonis.LanguageListening;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SWIFT_VERSION = 3.0;
@@ -393,9 +393,9 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer: haik@mexonis.com (GZ4E237K2F)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = STL8QF2W3R;
-				INFOPLIST_FILE = YouTube/Info.plist;
+				INFOPLIST_FILE = LanguageListening/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.mexonis.YouTube;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mexonis.LanguageListening;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SWIFT_VERSION = 3.0;
