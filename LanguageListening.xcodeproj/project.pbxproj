@@ -99,7 +99,7 @@
 			name = Extensions;
 			sourceTree = "<group>";
 		};
-		2241B9331D2281F400A8167B /* Model */ = {
+		2241B9331D2281F400A8167B /* Models */ = {
 			isa = PBXGroup;
 			children = (
 				22BD935F1D3394A200CD57A5 /* User.swift */,
@@ -109,7 +109,7 @@
 				22B7F9DF1D478BF9008C427D /* Video.swift */,
 				226566C41D52430000A6FFCE /* SuggestedVideo.swift */,
 			);
-			name = Model;
+			name = Models;
 			sourceTree = "<group>";
 		};
 		2241B9341D22821600A8167B /* Helpers */ = {
@@ -124,8 +124,8 @@
 		2266A71C1D2E6C1B00B4B9B3 /* supporting views */ = {
 			isa = PBXGroup;
 			children = (
-				22BD935D1D33818500CD57A5 /* SubscriptionsProfilePicCell.swift */,
 				226B84F41D32A03F006D6A0D /* FeedCollectionViewController.swift */,
+				22BD935D1D33818500CD57A5 /* SubscriptionsProfilePicCell.swift */,
 				220E5E231D2E7D1A001E60A3 /* CustomCollectionViewCell.swift */,
 				220E5E241D2E7D1A001E60A3 /* Search.swift */,
 				220E5E251D2E7D1A001E60A3 /* SettingsTable.swift */,
@@ -161,10 +161,9 @@
 				2229DC541D1EEA2E0058E804 /* ViewControllers */,
 				2266A71C1D2E6C1B00B4B9B3 /* supporting views */,
 				2229DC551D1EEA4F0058E804 /* Extensions */,
-				2241B9331D2281F400A8167B /* Model */,
+				2241B9331D2281F400A8167B /* Models */,
 				2241B9341D22821600A8167B /* Helpers */,
 			);
-			name = LanguageListening;
 			path = LanguageListening;
 			sourceTree = "<group>";
 		};

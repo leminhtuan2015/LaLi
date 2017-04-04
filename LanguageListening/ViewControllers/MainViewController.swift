@@ -67,7 +67,7 @@ class MainViewController: UIViewController, UICollectionViewDataSource, UICollec
     }()
     
     //MARK: Methods
-    func customization()  {
+    func renderViews()  {
         //CollectionView Customization
         self.collectionView.contentInset = UIEdgeInsetsMake(44, 0, 0, 0)
         self.view.addSubview(self.collectionView)
@@ -141,8 +141,10 @@ class MainViewController: UIViewController, UICollectionViewDataSource, UICollec
     override func viewDidLoad() {
         self.collectionView.register(UICollectionViewCell.self, forCellWithReuseIdentifier: "Cell")
         super.viewDidLoad()
-        customization()
+        
+        renderViews()
         didSelectItem(atIndex: 0)
+        
         NotificationCenter.default.addObserver(self, selector: #selector(MainViewController.hideBar(notification:)), name: NSNotification.Name("hide"), object: nil)
     }
     
@@ -164,7 +166,9 @@ class MainViewController: UIViewController, UICollectionViewDataSource, UICollec
     
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         let scrollIndex = Int(round(scrollView.contentOffset.x / self.view.bounds.width))
+        
         self.titleLabel.text = self.items[scrollIndex]
+        
         if self.viewsAreInitialized {
             self.tabBar.whiteView.frame.origin.x = (scrollView.contentOffset.x / 4)
             self.tabBar.highlightItem(atIndex: scrollIndex)
