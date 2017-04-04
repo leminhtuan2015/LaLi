@@ -136,7 +136,7 @@
 		22AA445A1D1302FB00CA6185 = {
 			isa = PBXGroup;
 			children = (
-				22AA44651D1302FB00CA6185 /* YouTube */,
+				22AA44651D1302FB00CA6185 /* LanguageListening */,
 				22AA44641D1302FB00CA6185 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -149,7 +149,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		22AA44651D1302FB00CA6185 /* YouTube */ = {
+		22AA44651D1302FB00CA6185 /* LanguageListening */ = {
 			isa = PBXGroup;
 			children = (
 				22AA44661D1302FC00CA6185 /* AppDelegate.swift */,
@@ -161,6 +161,7 @@
 				2241B9331D2281F400A8167B /* Model */,
 				2241B9341D22821600A8167B /* Helpers */,
 			);
+			name = LanguageListening;
 			path = YouTube;
 			sourceTree = "<group>";
 		};
